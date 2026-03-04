@@ -137,7 +137,7 @@
   display: block;
   white-space: nowrap;
   
-/*   animation: fadeIn 3s forwards; */
+  animation: fadeIn 3s forwards;
 }
 
 @keyframes fadeIn {
