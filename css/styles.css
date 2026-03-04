@@ -1,0 +1,207 @@
+/* click me page */
+.clickmepage {
+  background-color: black;
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.envelope-container {
+  position: relative;
+  width: 45vw;
+  display: block;
+  white-space: nowrap;
+  animation: subtleBounce 4s infinite ease-in-out;
+}
+
+@keyframes subtleBounce {
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(-8px);}
+}
+
+#envelope {
+  width: 100%;
+  display: block;
+  filter: drop-shadow(0 0 20px rgba(255,255,255,0.6));
+}
+
+.click-link {
+  position: absolute;
+  bottom: -3.7%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Ballet", cursive;
+  font-size: 5vw;
+  color: black;
+  text-decoration: none;
+}
+
+/* welcome page */
+.welcomepage {
+  background-color: #540000;
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper-container {
+  position: relative;
+  width: 60vw;
+  display: block;
+  white-space: nowrap;
+  
+  animation: 
+    slideInPaper 2s ease-out forwards,
+    subtleBounce 5s infinite ease-in-out;
+  
+  animation-delay: 0s, 2s;
+}
+
+@keyframes slideInPaper {
+  0% {
+    transform: translateX(-50vw);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#paper {
+  width: 100%;
+  display: block;
+}
+
+.blurb1 {
+  position: absolute;
+  top: 30%;
+  left: 47%;
+  transform: translateX(-50%);
+  font-family: "Ballet", cursive;
+  font-size: 5vw;
+  color: #540000;
+}
+
+.blurb2 {
+  position: absolute;
+  top: 45%;
+  left: 53%;
+  transform: translateX(-50%);
+  font-family: "Ballet", cursive;
+  font-size: 5vw;
+  color: #540000;
+}
+
+/* fav page */
+.favpage {  
+  background-image: url(images/brownbackground.png);
+  background-size: cover; /*image adapts to screen size change/doesn't get cut off*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  width: 100vw;
+  height: 100vh; /*100% of the viewport*/
+  
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  margin: 0;
+  overflow: hidden;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favcontainer {
+  position: relative;
+  width: 60vw;
+  display: block;
+  white-space: nowrap;
+  
+/*   animation: fadeIn 3s forwards; */
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#tin {
+  width: 100%;
+  display: block;
+}
+
+#bubblewrap {
+  position: absolute;
+  bottom: 54%;
+  left: 30%;
+  width: 25vw;
+  cursor: pointer;
+}
+
+#bubblewrapblurb {
+  display: none; /* start hidden */
+  position: absolute;
+  bottom: 60%;
+  left: 80%;
+  width: 20vw;
+
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.title {
+  margin: 13px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-transform: lowercase;
+  color: black;
+}
+
+.text {
+  margin: 13px;
+  font-family: "Roboto", sans-serif;
+  text-transform: lowercase;
+  color: black;
+}
+  
+#closeBubble {
+  color: gray;
+  float: right;
+  padding: 10px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.my {
+  position: absolute;
+  bottom: 65%;
+  left: 25%;
+  transform: translateX(-50%);
+  font-family: "Ballet", cursive;
+  font-size: 6vw;
+  color: white;
+}
+
+.favorites {
+  position: absolute;
+  top: 70%;
+  left: 73%;
+  transform: translateX(-50%);
+  font-family: "Ballet", cursive;
+  font-size: 6vw;
+  color: white;
+}
