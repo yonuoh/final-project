@@ -1,21 +1,36 @@
 /* global nn */
 
-let isBubbleOpen = false
+function makeToggle (imgId, blurbId, closeId) {
+  let IsItOpen = false
 
-function showBubble () {
-  nn.get('#bubblewrapblurb').css('display', 'block')
-  isBubbleOpen = true
+  function show () {
+    nn.get(blurbId).css('display', 'block')
+    IsItOpen = true
+  }
+
+  function hide () {
+    nn.get(blurbId).css('display', 'none')
+    IsItOpen = false
+  }
+
+  function toggle () {
+    if (IsItOpen) hide()
+    else show()
+  }
+
+  nn.get(imgId).on('click', toggle)
+  nn.get(closeId).on('click', hide)
 }
 
-function hideBubble () {
-  nn.get('#bubblewrapblurb').css('display', 'none')
-  isBubbleOpen = false
-}
-
-function toggle () {
-  if (isBubbleOpen) hideBubble()
-  else showBubble()
-}
-
-nn.get('#bubblewrap').on('click', toggle)
-nn.get('#closeBubble').on('click', hideBubble)
+makeToggle('#bubblewrap', '#bubblewrapBlurb', '#closeBubble')
+makeToggle('#running', '#runningBlurb', '#closeRunning')
+makeToggle('#mat', '#matBlurb', '#closeMat')
+makeToggle('#beli', '#beliBlurb', '#closeBeli')
+makeToggle('#pen', '#penBlurb', '#closePen')
+makeToggle('#smoothie', '#smoothieBlurb', '#closeSmoothie')
+makeToggle('#washytape', '#washytapeBlurb', '#closeWashytape')
+makeToggle('#earbuds', '#earbudsBlurb', '#closeEarbuds')
+makeToggle('#yogurt', '#yogurtBlurb', '#closeYogurt')
+makeToggle('#eadem', '#eademBlurb', '#closeEadem')
+makeToggle('#goldstar', '#goldstarBlurb', '#closeGoldstar')
+makeToggle('#denimstar', '#denimstarBlurb', '#closeDenimstar')

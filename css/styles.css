@@ -58,21 +58,18 @@
   
   animation: 
     slideInPaper 2s ease-out forwards,
-    subtleBounce 5s infinite ease-in-out;
+    subtleBounce 4.5s infinite ease-in-out;
   
   animation-delay: 0s, 2s;
 }
 
 @keyframes slideInPaper {
-  0% {
+  0% { 
     transform: translateX(-50vw);
-    opacity: 0;
-  }
-
+    opacity: 0; }
   100% {
     transform: translateX(0);
-    opacity: 1;
-  }
+    opacity: 1; }
 }
 
 #paper {
@@ -101,6 +98,18 @@
 }
 
 /* fav page */
+#homebutton {
+  position: fixed;
+  top: 5%;
+  left: 90%;
+}
+
+#homebutton img {
+  width: 8vw;
+  cursor: pointer;
+  filter: drop-shadow(0 0 17px rgba(255,255,255,0.6));
+}
+
 .favpage {  
   background-image: url(images/brownbackground.png);
   background-size: cover; /*image adapts to screen size change/doesn't get cut off*/
@@ -128,7 +137,7 @@
   display: block;
   white-space: nowrap;
   
-/*   animation: fadeIn 3s forwards; */
+  animation: fadeIn 3s forwards;
 }
 
 @keyframes fadeIn {
@@ -143,17 +152,17 @@
 
 #bubblewrap {
   position: absolute;
-  bottom: 54%;
+  bottom: 62%;
   left: 30%;
   width: 25vw;
   cursor: pointer;
 }
 
-#bubblewrapblurb {
+#bubblewrapBlurb {
   display: none; /* start hidden */
   position: absolute;
-  bottom: 60%;
-  left: 80%;
+  bottom: 53%;
+  left: 75%;
   width: 20vw;
 
   background: rgba(255,255,255,0.7);
@@ -163,7 +172,266 @@
   overflow-wrap: break-word;
 }
 
-.title {
+#running {
+  position: absolute;
+  bottom: 60%;
+  left: 34%;
+  width: 7vw;
+  cursor: pointer;
+  transform: rotate(-16deg);
+}
+
+#runningBlurb {
+  display: none; /* start hidden */
+  position: absolute;
+  bottom: 85%;
+  right: 78%;
+  width: 20vw;
+
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+#mat {
+  position: absolute;
+  bottom: 57%;
+  left: 41%;
+  width: 13vw;
+  cursor: pointer;
+}
+
+#matBlurb {
+  display: none; /* start hidden */
+  position: absolute;
+  bottom: 95%;
+  left: 60%;
+  width: 20vw;
+
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+#beli {
+  position: absolute;
+  bottom: 72%;
+  right: 38%;
+  width: 5vw;
+  cursor: pointer;
+}
+
+#beliBlurb {
+  display: none; /* start hidden */
+  position: absolute;
+  bottom: 75%;
+  left: 70%;
+  width: 20vw;
+
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+#pen {
+  position: absolute;
+  bottom: 60%;
+  right: 51%;
+  width: 1.3vw;
+  transform: rotate(47deg);
+  cursor: pointer;
+}
+
+#penBlurb {
+  display: none; /* start hidden */
+  position: absolute;
+  bottom: 100%;
+  right: 42%;
+  width: 20vw;
+
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+#smoothie {
+  position: absolute;
+  bottom: 52%;
+  right: 61%;
+  width: 3vw;
+  transform: rotate(-29deg);
+  cursor: pointer;
+}
+
+#smoothieBlurb {
+  display: none; /* start hidden */
+  position: absolute;
+  bottom: 65%;
+  right: 82%;
+  width: 20vw;
+
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+#washytape {
+  position: absolute;
+  bottom: 33%;
+  right: 35%;
+  width: 14vw;
+  transform: rotate(-10deg);
+  cursor: pointer;
+}
+
+#washytapeBlurb {
+  display: none; /* start hidden */
+  position: absolute;
+  top: 95%;
+  left: 70%;
+  width: 20vw;
+
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+#earbuds {
+  position: absolute;
+  bottom: 14%;
+  right: 42%;
+  width: 13vw;
+  transform: rotate(-18deg);
+  cursor: pointer;
+}
+
+#earbudsBlurb {
+  display: none; /* start hidden */
+  position: absolute;
+  top: 93%;
+  right: 75%;
+  width: 20vw;
+
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+#yogurt {
+  position: absolute;
+  bottom: 16%;
+  right: 32%;
+  width: 8vw;
+  transform: rotate(-10deg);
+  cursor: pointer;
+}
+
+#yogurtBlurb {
+  display: none; /* start hidden */
+  position: absolute;
+  top: 97%;
+  left: 30%;
+  width: 20vw;
+
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+#eadem {
+  position: absolute;
+  bottom: 35%;
+  right: 37%;
+  width: 19vw;
+  transform: rotate(-3deg);
+  cursor: pointer;
+}
+
+#eademBlurb {
+  display: none; /* start hidden */
+  position: absolute;
+  top: 42%;
+  right: 70%;
+  width: 20vw;
+
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+#goldstar {
+  position: absolute;
+  bottom: 9%;
+  right: 60%;
+  width: 9vw;
+  cursor: pointer;
+}
+
+#goldstarBlurb {
+  display: none; /* start hidden */
+  position: absolute;
+  top: 65%;
+  right: 80%;
+  width: 20vw;
+
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+#denimstar {
+  position: absolute;
+  bottom: 45%;
+  right: 27%;
+  width: 7vw;
+  cursor: pointer;
+}
+
+#denimstarBlurb {
+  display: none; /* start hidden */
+  position: absolute;
+  bottom: 28%;
+  left: 79%;
+  width: 20vw;
+
+  background: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+.titleBubble, 
+.titleRunning,
+.titleMat,
+.titleBeli,
+.titlePen,
+.titleSmoothie,
+.titleWashytape,
+.titleEarbuds,
+.titleYogurt,
+.titleEadem,
+.titleGoldstar,
+.titleDenimstar {
   margin: 13px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -171,14 +439,36 @@
   color: black;
 }
 
-.text {
+.textBubble, 
+.textRunning,
+.textMat,
+.textBeli,
+.textPen,
+.textSmoothie,
+.textWashytape,
+.textEarbuds,
+.textYogurt,
+.textEadem,
+.textGoldstar,
+.textDenimstar {
   margin: 13px;
   font-family: "Roboto", sans-serif;
   text-transform: lowercase;
   color: black;
 }
   
-#closeBubble {
+#closeBubble, 
+#closeRunning,
+#closeMat,
+#closeBeli,
+#closePen,
+#closeSmoothie,
+#closeWashytape,
+#closeEarbuds,
+#closeYogurt,
+#closeEadem,
+#closeGoldstar,
+#closeDenimstar {
   color: gray;
   float: right;
   padding: 10px;
@@ -199,7 +489,7 @@
 .favorites {
   position: absolute;
   top: 70%;
-  left: 73%;
+  left: 74%;
   transform: translateX(-50%);
   font-family: "Ballet", cursive;
   font-size: 6vw;
