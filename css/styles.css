@@ -137,7 +137,7 @@
   display: block;
   white-space: nowrap;
   
-  animation: fadeIn 3s forwards;
+/*   animation: fadeIn 3s forwards; */
 }
 
 @keyframes fadeIn {
@@ -161,7 +161,7 @@
 #bubblewrapBlurb {
   display: none; /* start hidden */
   position: absolute;
-  bottom: 53%;
+  bottom: 51%;
   left: 75%;
   width: 20vw;
 
@@ -207,7 +207,7 @@
   display: none; /* start hidden */
   position: absolute;
   bottom: 95%;
-  left: 60%;
+  left: 64%;
   width: 20vw;
 
   background: rgba(255,255,255,0.7);
@@ -228,8 +228,8 @@
 #beliBlurb {
   display: none; /* start hidden */
   position: absolute;
-  bottom: 75%;
-  left: 70%;
+  bottom: 72%;
+  left: 73%;
   width: 20vw;
 
   background: rgba(255,255,255,0.7);
@@ -410,8 +410,8 @@
 #denimstarBlurb {
   display: none; /* start hidden */
   position: absolute;
-  bottom: 28%;
-  left: 79%;
+  bottom: 29%;
+  left: 72%;
   width: 20vw;
 
   background: rgba(255,255,255,0.7);
