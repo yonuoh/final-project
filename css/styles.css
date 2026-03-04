@@ -435,7 +435,6 @@
   margin: 13px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 1vw;
   text-transform: lowercase;
   color: black;
 }
@@ -454,7 +453,6 @@
 .textDenimstar {
   margin: 13px;
   font-family: "Roboto", sans-serif;
-  font-size: 1vw;
   text-transform: lowercase;
   color: black;
 }
@@ -472,7 +470,6 @@
 #closeGoldstar,
 #closeDenimstar {
   color: gray;
-  font-size: 1.5vmin;
   float: right;
   padding: 10px;
   user-select: none;
